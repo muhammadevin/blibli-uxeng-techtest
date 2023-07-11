@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <div className='flex flex-col gap-6 py-8 px-4 bg-slate-200'>
+    <div className='flex flex-col gap-6 py-8 px-4 md:px-6 bg-slate-200'>
       <p className={`text-xs text-justify ${isCollapsed ? 'hidden' : 'block'}`}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus massa tempor nisi placerat suscipit. Pellentesque pellentesque nibh vel laoreet efficitur. Aliquam sodales et ex eget tempus. Donec laoreet eros justo, quis dignissim nulla eleifend scelerisque. Vestibulum eu tortor dignissim lorem pellentesque aliquam sit amet in mauris. Maecenas et felis nec erat ornare tincidunt ut quis dolor. Donec massa quam, finibus eu commodo ut, lacinia in sem. Mauris leo enim, pretium consectetur maximus sit amet, lacinia vel augue. Morbi quis odio sit amet neque ornare viverra. Ut dictum dictum sodales. Phasellus semper suscipit enim, non volutpat neque rhoncus quis. Ut dictum fermentum justo nec molestie. Vestibulum pharetra quis erat vitae sodales.
       </p>
