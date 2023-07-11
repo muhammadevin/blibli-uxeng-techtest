@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 767px) {
+  .flex-col-reverse {
+    flex-direction: column-reverse;
+  }
+}
+
