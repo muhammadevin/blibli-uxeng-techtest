@@ -13,8 +13,8 @@ const ProductCard = ({type, size}) => {
     }
   
   return (
-      <div className={`min-w-[132px] md:min-w-[182px] h-full flex-col bg-slate-300 rounded-xl shadow-lg`}>
-        <img className={`w-full h-full object-cover ${type === 'disabled' ? 'opacity-60' : ''}`} src={productImg} alt='Product' />
+      <div className={`${size === 'small' ? 'min-w-[132px] max-w-[132px]' : 'min-w-[132px] md:min-w-[182px] max-w-[182px]'} h-full flex-col bg-slate-300 rounded-xl shadow-lg`}>
+        <img className={`w-full h-full object-cover ${type === 'disabled' ? 'opacity-60' : ''} rounded-t-xl`} src={productImg} alt='Product' />
         <div className='flex flex-col gap-[0.1rem] p-2 text-left bg-white rounded-b-xl'>
           <span className='text-sm font-semibold line-clamp-2'>{products.title}</span>
           <span className='text-sm text-orange-400 font-bold'>
@@ -22,7 +22,7 @@ const ProductCard = ({type, size}) => {
           </span>
           <div className='flex flex-row text-2xs gap-1 items-center'>
             <h4 className='text-slate-400 line-through'>{rupiahFormat(products.price)}</h4>
-            <h4 className='bg-red-300 text-red-700 rounded-xl p-[2px]'>{products.disc}%</h4>
+            <h4 className='bg-red-300 text-red-700 rounded-xl font-semibold p-[3px]'>{products.disc}%</h4>
           </div>
           <div className="mt-2">
             <button
